@@ -1,0 +1,18 @@
+/* pages/nearby/nearby.wxss */
+.title{
+  margin:20rpx;
+  text-align: center;
+}
+image{
+  width: 50%;
+  height: 100rpx;
+}
+text{
+  margin: 20rpx;
+  font-size: 16px;
+}
+.map{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx 20rpx;
+}

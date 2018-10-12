@@ -1,0 +1,38 @@
+<!--pages/menu/menu.wxml-->
+<view class="main">
+    <view class="categroy-left">
+        <view wx:for="{{menuname}}" wx:key="index" data-id="{{item.id}}" data-name='{{item.name}}' data-index="{{index}}"
+            bindtap="switchTab"
+            class="cate-list {{curIndex === index?'on':''}}">{{item.name}}
+        </view>
+    </view>
+    <scroll-view class="categroy-right" scroll-y="{{isScroll}}" scroll-into-view="{{toView}}" scroll-with-animation="true">
+         <block>
+            <view id="new" class="cate-box">
+                <view class="cate-banner">
+                    <image src="/assets/images/logo.png"></image>
+                </view>
+                <view class="cate-title">
+                    <text>{{toView}}</text>
+                </view>
+                <view class="product">
+                  <view class="product-list" wx:for="{{menumore}}" wx:key="index" >
+                    <image src='{{item.img_url}}'></image>
+                    <view class='list-item'>
+                      <view class='list-title'>{{item.name}}</view>
+                      <view class='list-price'>¥{{item.full_price}}</view>
+                      <view class='list-btn'>
+                        <button class='btn'>-</button>
+                        <text class='inp'>{{item.num}}</text>
+                        <button class='btn' data-lid='{{item.lid}}' data-name='{{item.name}}' data-img='{{item.img_url}}' data-price='{{item.full_price}}' bindtap='addCart' data-count='{{item.num}} ' data-index='{{index}}'>+</button>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+                <navigator class='cart' bindtap='showCart'>
+                  <image src='/assets/icon/yidian.svg'></image>
+                </navigator>
+            </view>
+        </block>
+    </scroll-view>
+</view>

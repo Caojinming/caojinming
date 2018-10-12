@@ -1,0 +1,17 @@
+<!--pages/nearby/nearby.wxml-->
+<view class='title'>
+  <image src='/assets/images/logo.png'></image>
+  <text>
+    抱歉在您附近没有发现海底捞门店!
+  </text>
+</view>
+<view class='map'>
+  <map
+    subkey='IMFBZ-RVPRF-PS7JA-NR5XA-6X756-6YBQN'
+    style='width:100%;height:375px;'
+    scale='16'
+    longitude='{{longitude}}'
+    latitude='{{latitude}}'
+    show-compass='true'
+  ></map>
+</view>

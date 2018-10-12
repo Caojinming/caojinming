@@ -1,0 +1,132 @@
+/* pages/menu/menu.wxss */
+page{
+    background-color: #ffffff;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+    font-size: 24rpx;
+}
+.navigator-hover{
+    background: none;
+}
+page,.main{
+    height: 100%;
+}
+.categroy-left{
+    float: left;
+    width: 200rpx;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.categroy-left .cate-list{
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    border-left: 3px solid #fff;
+}
+.categroy-left .cate-list.on{
+    color: #000;
+    border-color: #F00;
+    background-color: #EDECE8;
+}
+.categroy-right{
+    float: right;
+    width: 550rpx;
+    height: 100%;
+    overflow: hidden; 
+}
+.cate-box{
+    height: 100%;
+    padding:40rpx;
+    box-sizing: border-box;
+}
+.cate-box .cate-banner image{
+    display: block;
+    width: 100%;
+    height: 150rpx;
+    margin-bottom:20rpx; 
+}
+.cate-title{
+    position: relative;
+    height: 30rpx;
+    line-height: 30rpx;
+    padding:30rpx 0 55rpx;
+    text-align: center;
+    font-size: 16px;
+}
+.cate-title::before{
+    position: absolute;
+    left: 80rpx;
+    top: 45rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #f00;
+}
+.cate-title::after{
+    position: absolute;
+    right: 80rpx;
+    top: 45rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #f00;
+}
+.product-list{
+  display: flex;
+  position: relative;
+  border-bottom: 1rpx solid #ddd;
+}
+.product{
+  height: 680rpx;
+  overflow:scroll;
+}
+.product-list image{
+  width:200rpx;
+  height: 150rpx;
+  margin: 10rpx;
+}
+.list-item{
+  padding:10rpx;
+}
+.list-title{
+  font-size:16px;
+}
+.list-price{
+  margin-top:15rpx; 
+}
+.list-btn{
+  display: flex;
+  vertical-align: middle;
+}
+.inp{
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  padding: 12rpx 0; 
+  text-align: center;
+}
+.btn{
+  display: inline-block;
+  margin:6px;
+  padding:0;
+  line-height: 0.7rem;
+  width: 30rpx;
+  height: 30rpx;
+  background: red;
+  color:#fff;
+  border-radius: 50%;
+}
+.cart{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.cart image{
+  height: 64rpx;
+  width:64rpx;
+  margin-top: 28rpx;
+}
+.cart view{
+  font-size: 16px;
+}

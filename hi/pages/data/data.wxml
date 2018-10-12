@@ -1,0 +1,12 @@
+<!--pages/data/data.wxml-->
+<view class='app'>
+  <view class='title'>
+    <image src='/assets/images/logo.png'></image>
+  </view>
+  <view class='test'>
+    <input type="number" maxlength='11' placeholder="请输入手机号码"></input>
+    <input type="number" maxlength='6' placeholder="请输入六位验证码"></input>
+    <button>发送验证码</button>
+  </view>
+  <button form-type='submit' class='sub'>绑定手机号</button>
+</view>

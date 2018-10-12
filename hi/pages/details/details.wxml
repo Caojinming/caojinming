@@ -1,0 +1,48 @@
+<!--pages/details/details.wxml-->
+<view class='title'>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 
+      登录 
+    </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover">
+      </image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<view class='index-text'>
+  <view class='divider'></view>
+  <navigator class='text-item' bindtap="showData"> 
+    <view>  
+      <image src='/assets/icon/tel.svg'></image>
+      <text>手机绑定</text>
+    </view>
+  </navigator>
+  <navigator class='text-item arrow' bindtap="showInt"> 
+    <view>  
+      <image src='/assets/icon/integral.svg'></image>
+      <text>积分</text>
+    </view>
+  </navigator>
+  <view class='divider'></view>
+  <navigator class='text-item arrow' bindtap="showNearby"> 
+    <view>  
+      <image src='/assets/icon/nearby.svg'></image>
+      <text>附近门店</text>
+    </view>
+  </navigator>
+  <navigator class='text-item arrow' bindtap="showSub"> 
+    <view>  
+      <image src='/assets/icon/sub.svg'></image>
+      <text>提前预约</text>
+    </view>
+  </navigator>
+  <view class='divider'></view>
+  <navigator class='text-item arrow' bindtap=""> 
+    <view>  
+      <image src='/assets/icon/set.svg'></image>
+      <text>设置</text>
+    </view>
+  </navigator>
+</view>

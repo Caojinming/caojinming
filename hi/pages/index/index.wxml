@@ -1,0 +1,33 @@
+<!--pages/index/index.wxml-->
+<view class="swiper">
+  <swiper autoplay interval='2500' indicator-dots="true">
+    <swiper-item wx:for="{{swiperlist}}" wx:key="id">
+      <!--图片 设置宽高 等比例缩放-->
+      <image src='{{item.img_url}}' mode="aspectFill" width="375" height="375"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class='bar'>
+  <view class='bar-item' wx:for="{{barlist}}" wx:key="id">
+    <image src='{{item.img_url}}'></image>
+    <view class='add'>
+      <text class='title'>{{item.title}}</text>
+      <text class='more'>{{item.more}}</text>
+    </view>
+  </view>
+</view>
+<view class='service'>
+  <image src='/assets/icon/service_mb.png' mode="aspectFill"></image>
+  <view class='service-text'>
+    <text class='service-title'>特色个性化服务</text>
+    <text class='service-li'>为女性顾客准备的免费美甲（工作日）和手护（节假日）</text>
+    <text class='service-li'>免费皮鞋擦拭清理服务</text>
+    <text class='service-li'>免费照片打印</text>
+    <text class='service-li'>按摩椅放松等</text>
+    <text class='service-li'>部分门店设有儿童游乐园，并有专人陪护</text>
+    <text class='service-title'>特色火锅文化</text>
+    <text class='service-li'>四川特色国粹变脸表演</text>
+    <text class='service-li'>融合中华武术的捞面表演</text>
+    <text class='service-li'>等座期间为顾客提供各种零食、水果、游戏</text>
+  </view>
+</view>

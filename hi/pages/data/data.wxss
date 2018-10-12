@@ -1,0 +1,32 @@
+/* pages/data/data.wxss */
+.title{
+  margin-top:20rpx;
+  padding: 10rpx;
+  text-align: center;
+}
+.title image{
+  width: 50%;
+  height: 100rpx;
+}
+.test{
+  position: relative;
+}
+.test input{
+  border-bottom: 1rpx solid #aaa;
+  margin: 20rpx;
+  padding:10rpx; 
+  font-size: 16px;
+}
+.test button{
+  font-size: 14px;
+  background: #aaa;
+  position: absolute;
+  bottom:12rpx;
+  right: 20rpx;
+}
+.sub{
+  background: #f00;
+  margin: 20rpx;
+  font-size: 16px;
+  color:#fff;
+}

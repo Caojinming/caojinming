@@ -1,0 +1,30 @@
+/* pages/sub/sub.wxss */
+.logo{
+  text-align: center;
+  margin: 20rpx;
+}
+.logo image{
+  width: 50%;
+  height: 100rpx;
+}
+.section__title{
+  text-align: center;
+  margin: 20rpx;
+  padding: 20rpx;
+  background: #aaa;
+  font-size: 16px;
+  border-radius: 10rpx;
+}
+.picker{
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx;
+  margin: 20rpx;
+}
+.sub{
+  background: #f00;
+  margin: 20rpx;
+  font-size: 16px;
+  color:#fff;
+}
